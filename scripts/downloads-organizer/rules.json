@@ -1,0 +1,39 @@
+{
+  "_comment": "Each rule maps a destination folder name to a list of keywords. Matching is case-insensitive and checks the file name (and, for plain text files, the first few KB of content). Add/edit entries freely -- no code changes needed.",
+  "rules": [
+    {
+      "folder": "SARO",
+      "keywords": ["saro"]
+    },
+    {
+      "folder": "FDE Interview",
+      "keywords": ["fde interview", "fde-interview", "fde_interview", "forward deployed engineer", "fde"]
+    },
+    {
+      "folder": "Resumes",
+      "keywords": ["resume", "cv"]
+    },
+    {
+      "folder": "Invoices",
+      "keywords": ["invoice", "receipt"]
+    },
+    {
+      "folder": "Contracts",
+      "keywords": ["contract", "agreement", "nda"]
+    },
+    {
+      "folder": "Tax Documents",
+      "keywords": ["tax", "w2", "1099", "irs"]
+    }
+  ],
+  "extension_fallback": {
+    "_comment": "Used only for files that don't match any keyword rule above, and only when --sort-remaining is passed.",
+    "Images": ["jpg", "jpeg", "png", "gif", "heic", "webp", "svg"],
+    "Spreadsheets": ["xls", "xlsx", "csv", "tsv"],
+    "Presentations": ["ppt", "pptx", "key"],
+    "PDFs": ["pdf"],
+    "Word Documents": ["doc", "docx", "rtf", "odt"],
+    "Archives": ["zip", "rar", "7z", "tar", "gz"],
+    "Text Files": ["txt", "md"]
+  }
+}
